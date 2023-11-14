@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title> About LGSF</title>
+  <link rel="stylesheet" href="info.css">
+</head>
+<body>
+  <header>
+    <h1>LGSF</h1>(Light Gauge Steel Framing)
+    <nav>
+      <ul>
+        <li><a href="mailto:futurecrafts9@gmail.com">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="about">
+      <h2>About LGSF</h2>
+      <p>Light Gauge Steel Framing (LGSF) is a modern construction technique that has
+         gained immense popularity in recent years. It is a type of construction system that uses
+          cold-formed steel sections to create the structural framework of buildings. This technique has a number
+           of benefits over traditional building methods, including increased
+         speed of construction, enhanced sustainability, and superior strength-to-weight ratio.</p>
+         <p>LGSF construction typically involves the use of thin-gauge steel sheets, which are fabricated into standardized
+            sections such as studs, tracks, and joists. These sections are then assembled on-site using screws and other mechanical 
+            fasteners, forming the structural framework of the building. LGSF construction 
+           can be used for a variety of building types, including residential, commercial, industrial, and institutional structures.</p>
+      <p>In summary, LGSF construction is a modern construction technique that offers a number of benefits
+         over traditional building methods. Its speed of construction, sustainability, superior strength-to-weight ratio, 
+        and design flexibility make it an attractive option for a wide variety of building types and applications.</p>
+    </section>
+
+  
+      <style>
+        .image-container {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+        }
+        .image {
+          width: 45%;
+          margin-bottom: 20px;
+          cursor: pointer;
+        }
+        .preview {
+          display: none;
+          position: fixed;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background-color: rgba(0, 0, 0, 0.5);
+          z-index: 1;
+        }
+        .preview-image {
+          max-width: 80%;
+          max-height: 80%;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+      </style>
+      <script>
+        function showPreview(image) {
+          var preview = document.getElementById("preview");
+          var previewImage = document.getElementById("preview-image");
+    
+          previewImage.src = image.src;
+    
+          preview.style.display = "block";
+        }
+    
+        function hidePreview() {
+          var preview = document.getElementById("preview");
+          preview.style.display = "none";
+        }
+      </script>
+    </head>
+    <body>
+      <div class="image-container">
+        <img src="res.jpg" alt="Image 1" class="image" onclick="showPreview(this);">
+        <img src="res2.jpg" alt="Image 2" class="image" onclick="showPreview(this);">
+        <img src="portal.jpg" alt="Image 3" class="image" onclick="showPreview(this);">
+        <img src="cons5.jpg" alt="Image 4" class="image" onclick="showPreview(this);">
+      </div>
+    
+      <div id="preview" class="preview" onclick="hidePreview();">
+        <img id="preview-image" class="preview-image">
+      </div>
+    </body>
+    
+
+    <section id="services">
+      <h2>Benefits</h2>
+      <ul id="list">
+        <li>Primary Advantages of LGSF construction is its speed of Construction. </li>
+        <li>Significant Cost Savings, as well as faster occupancy and revenue generation for Building Owners.</li>
+        <li>LGSF Construction is also highly Sustainable.</li>
+        <li>LGSF Construction also has superior strength-to-weight ratio compared to traditional Building Materials.</li>
+        <li>LGSF Construction is highly customizable and can be adapted to a wide variety of design styles and Building Types.</li>
+      </ul>
+    </section>
+
+    <style>
+      .image-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+      .image {
+        width: 45%;
+        margin-bottom: 20px;
+        cursor: pointer;
+      }
+      .preview {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 1;
+      }
+      .preview-image {
+        max-width: 80%;
+        max-height: 80%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    </style>
+    <script>
+      function showPreview(image) {
+        var preview = document.getElementById("preview");
+        var previewImage = document.getElementById("preview-image");
+          previewImage.src = image.src;
+          preview.style.display = "block";
+      }  
+      function hidePreview() {
+        var preview = document.getElementById("preview");
+        preview.style.display = "none";
+      }
+    </script>
+  </head>
+  <body>
+    <div class="image-container">
+      <img src="con1.jpg" alt="Image 1" class="image" onclick="showPreview(this);">
+      <img src="cons2 copy.jpg" alt="Image 1" class="image" onclick="showPreview(this);">
+    </div>
+    <div id="preview" class="preview" onclick="hidePreview();">
+      <img id="preview-image" class="preview-image">
+    </div>
+  </body>
+  
+
+
+    <section id="contact">
+      <h2>Query Us</h2>
+      <form method="post" action="lgsf.php">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="mail">Email:</label>
+        <input type="email" id="mail" name="mail" required>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </main>
+  <h3 align="center" ><a href="index.html">HOME</a></h3>
+</body>
+</html>

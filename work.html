@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Works</title>
+</head>
+<body>
+<h1 align="center">Our Works</h1>
+    <style>h1{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 400%;
+    }
+    
+body{
+    background: rgb(56,223,133);
+  background: radial-gradient(circle, rgba(56,223,133,1) 19%, rgba(167,207,255,1) 59%);
+  
+}
+        .image-container {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+        }
+        .image {
+          width: 45%;
+          margin-bottom: 20px;
+          cursor: pointer;
+        }
+        .preview {
+          display: none;
+          position: fixed;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background-color: rgba(0, 0, 0, 0.5);
+          z-index: 1;
+        }
+        .preview-image {
+          max-width: 80%;
+          max-height: 80%;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+      </style>
+      <script>
+        function showPreview(image) {
+          var preview = document.getElementById("preview");
+          var previewImage = document.getElementById("preview-image");
+    
+          previewImage.src = image.src;
+    
+          preview.style.display = "block";
+        }
+    
+        function hidePreview() {
+          var preview = document.getElementById("preview");
+          preview.style.display = "none";
+        }
+      </script>
+    </head>
+    <body>
+      <div class="image-container">
+        <img src="res.jpg" alt="Image 1" class="image" onclick="showPreview(this);">
+        <img src="res2.jpg" alt="Image 2" class="image" onclick="showPreview(this);">
+        <img src="portal.jpg" alt="Image 3" class="image" onclick="showPreview(this);">
+        <img src="cons5.jpg" alt="Image 4" class="image" onclick="showPreview(this);">
+        <img src="consss.jpg" alt="Image 5" class="image" onclick="showPreview(this);">
+        <img src="cons2 copy.jpg" alt="Image 6" class="image" onclick="showPreview(this);">
+        <img src="cons3.jpg" alt="Image 7" class="image" onclick="showPreview(this);">
+        <img src="cons4.jpg" alt="Image 8" class="image" onclick="showPreview(this);">
+        <img src="cons6.jpg" alt="Image 9" class="image" onclick="showPreview(this);">
+        <img src="res 3.jpg" alt="Image 10" class="image" onclick="showPreview(this);">
+       
+
+      </div>
+    
+      <div id="preview" class="preview" onclick="hidePreview();">
+        <img id="preview-image" class="preview-image">
+      </div>
+    </body>
+    <h3 align="center"><a href="index.html">HOME</a></h3>
+</body>
+</html>

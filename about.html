@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title> About LGSF</title>
+  <link rel="stylesheet" href="info.css">
+</head>
+<body>
+  <header>
+    <h1>ABOUT</h1>InstaBuild
+    <nav>
+      <ul>
+        <li><a href="mailto:futurecrafts9@gmail.com">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="about">
+      <h2>About Us</h2>
+      <p>Light Gauge Steel Framing (LGSF) is a modern construction technique that has gained immense popularity in recent years ,
+        and we use These technique for better farm and Construction. We work closely with our clients throughout the entire modular 
+       construction process offering a comprehensive approach to each and every project.</p>
+    </section>
+
+  
+      <style>
+        .image-container {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+        }
+        .image {
+          width: 45%;
+          margin-bottom: 20px;
+          cursor: pointer;
+        }
+        .preview {
+          display: none;
+          position: fixed;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background-color: rgba(0, 0, 0, 0.5);
+          z-index: 1;
+        }
+        .preview-image {
+          max-width: 80%;
+          max-height: 80%;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+      </style>
+      <script>
+        function showPreview(image) {
+          var preview = document.getElementById("preview");
+          var previewImage = document.getElementById("preview-image");
+    
+          previewImage.src = image.src;
+    
+          preview.style.display = "block";
+        }
+    
+        function hidePreview() {
+          var preview = document.getElementById("preview");
+          preview.style.display = "none";
+        }
+      </script>
+    </head>
+    <body>
+      <div class="image-container">
+        <img src="res.jpg" alt="Image 1" class="image" onclick="showPreview(this);">
+        <img src="res2.jpg" alt="Image 2" class="image" onclick="showPreview(this);">
+        <img src="portal.jpg" alt="Image 3" class="image" onclick="showPreview(this);">
+        <img src="cons5.jpg" alt="Image 4" class="image" onclick="showPreview(this);">
+      </div>
+    
+      <div id="preview" class="preview" onclick="hidePreview();">
+        <img id="preview-image" class="preview-image">
+      </div>
+    </body>
+    <body>
+        
+
+<style>
+
+</style>
+    <section id="services">
+      <h2>Benefits</h2>
+      <p><li align="center">We do every Detailing possible by us and take care of everything including Materials and Construction part.</li>
+        <li align="center">Project Management : To ensure every project runs smoothly, without any distraction and faults.</li>
+        <li align="center">Manufacturing part :We have a light steel gauge manufacturing facility that produces several section profiles of
+           varying dimensions for modular construction of buildings.</li>
+      </p>
+    </section>
+</body>
+    <style>
+      .image-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+      .image {
+        width: 45%;
+        margin-bottom: 20px;
+        cursor: pointer;
+      }
+      .preview {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 1;
+      }
+      .preview-image {
+        max-width: 80%;
+        max-height: 80%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    </style>
+    <script>
+      function showPreview(image) {
+        var preview = document.getElementById("preview");
+        var previewImage = document.getElementById("preview-image");
+          previewImage.src = image.src;
+          preview.style.display = "block";
+      }  
+      function hidePreview() {
+        var preview = document.getElementById("preview");
+        preview.style.display = "none";
+      }
+    </script>
+  </head>
+  <body>
+    <div class="image-container">
+      <img src="con1.jpg" alt="Image 1" class="image" onclick="showPreview(this);">
+      <img src="cons2 copy.jpg" alt="Image 1" class="image" onclick="showPreview(this);">
+    </div>
+    <div id="preview" class="preview" onclick="hidePreview();">
+      <img id="preview-image" class="preview-image">
+    </div>
+  </body>
+  
+
+
+    <section id="contact">
+      <h2>Query Us</h2>
+      <form method="post" action="lgsf.php">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="mail">Email:</label>
+        <input type="email" id="mail" name="mail" required>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </main>
+  <H3 align="center"><a href="index.html"> HOME</a></H3>
+</body>
+</html>
