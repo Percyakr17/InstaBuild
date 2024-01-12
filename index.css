@@ -78,7 +78,13 @@ a.link-to-book:hover {
     text-decoration: none;
 }
 
-.about-section p,
+.about-section p{
+    width: 60%;
+    margin: auto;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 1.8em;
+
+}
 .about-section h3 {
     text-align: center;
     width: 60%;
