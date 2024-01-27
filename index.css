@@ -1,6 +1,4 @@
 @import url('https://fonts.googleapis.com/css?family=Big+Shoulders+Text:100,300,400,500,600,700,800,900&display=swap');
-
-
 .nav-flex-row {
     display: flex;
     flex-direction: row;
@@ -11,7 +9,6 @@
     width: 100%;
     padding: 0;
 }
-
 .nav-flex-row li {
     text-decoration: none;
     list-style-type: none;
@@ -194,7 +191,6 @@ a.link-to-book:hover {
     .form-group p {
         font-size: 15px;
     }
-
     .opening-time p span,
     .contact-adress p span {
         font-size: 15px;
