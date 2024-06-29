@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   
-  <!-- Favicon -->
+
   <link rel="icon" href="BI.png" type="image/png">
   
-  <!-- Bootstrap CSS -->
+
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   
@@ -94,7 +93,59 @@
         margin: 0 5px;
       }
     }
+
+    .image-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    .image {
+      width: 45%;
+      margin-bottom: 20px;
+      cursor: pointer;
+    }
+    .preview {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.5);
+      z-index: 1;
+    }
+    .preview-image {
+      max-width: 50%;
+      max-height: 50%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    footer {
+      background-color: rgb(0, 0, 0);
+      color: rgb(255, 255, 255);
+      width: 100%;
+      text-align: center;
+      padding: 10px 0;
+      margin-top: auto;
+    }
   </style>
+
+  <script>
+    function showPreview(image) {
+      var preview = document.getElementById("preview");
+      var previewImage = document.getElementById("preview-image");
+      previewImage.src = image.src;
+      preview.style.display = "block";
+    }
+
+    function hidePreview() {
+      var preview = document.getElementById("preview");
+      preview.style.display = "none";
+    }
+  </script>
 </head>
 <body>
 
@@ -118,9 +169,10 @@
 <section class="about-section">
   <article>
     <h3>Why our work is the best ?</h3><br>
-
-  --> Light Gauge Steel Framing (LGSF) is a modern construction technique that has gained immense popularity in recent years due to its versatility, strength, and sustainability. LGSF employs lightweight steel as the primary structural element, which offers numerous advantages over traditional construction methods. One of the key benefits of LGSF is its ability to create precise and accurate building structures, thanks to advanced manufacturing techniques that produce steel components with minimal tolerances. This precision results in faster construction times and reduced material wastage, making it an environmentally friendly option.
-    <br>--> Moreover, LGSF is highly adaptable and can be used in various applications, including residential, commercial, and industrial buildings. Its lightweight nature allows for easier transportation and assembly, especially in remote or challenging locations. The use of galvanized steel ensures that the structures are resistant to corrosion and have a longer lifespan, reducing maintenance costs over time. By choosing LGSF, clients can benefit from a modern, cost-effective, and sustainable building solution that meets the demands of contemporary construction.
+    <p>
+      Light Gauge Steel Framing (LGSF) is a modern construction technique that has gained immense popularity in recent years due to its versatility, strength, and sustainability. LGSF employs lightweight steel as the primary structural element, which offers numerous advantages over traditional construction methods. One of the key benefits of LGSF is its ability to create precise and accurate building structures, thanks to advanced manufacturing techniques that produce steel components with minimal tolerances. This precision results in faster construction times and reduced material wastage, making it an environmentally friendly option.
+      Moreover, LGSF is highly adaptable and can be used in various applications, including residential, commercial, and industrial buildings. Its lightweight nature allows for easier transportation and assembly, especially in remote or challenging locations. The use of galvanized steel ensures that the structures are resistant to corrosion and have a longer lifespan, reducing maintenance costs over time. By choosing LGSF, clients can benefit from a modern, cost-effective, and sustainable building solution that meets the demands of contemporary construction.
+    </p>
   </article>
 </section>
 <br>
@@ -132,14 +184,17 @@
       <h3>Why to choose us?</h3>
       <p>
         We do every detailing possible and take care of everything including the materials and construction. <br>
-       -- <u>Project Management :</u> To ensure every project runs smoothly, without any distractions and faults. <br>
-       -- <u>Manufacturing part :</u> We have a light steel gauge manufacturing facility that produces several section profiles of varying dimensions for modular construction of buildings. <br>
-      -- <u>Best Formed Materials :</u>Our materials use the best steel and iron structures sourced locally. This increases the longevity of your purchase and also beautifies your construction.</p>
+       - <u>Project Management :</u> To ensure every project runs smoothly, without any distractions and faults. <br>
+       - <u>Manufacturing part :</u> We have a light steel gauge manufacturing facility that produces several section profiles of varying dimensions for modular construction of buildings. <br>
+      - <u>Best Formed Materials :</u>Our materials use the best steel and iron structures sourced locally. This increases the longevity of your purchase and also beautifies your construction.
+      </p>
     </div>
     <div class="col-md-4 feature">
       <i class="fas fa-shipping-fast fa-3x"></i>
       <h2>Fast Shipping</h2>
-      <p>We ensure you receive our materials as soon as we finish making them.we require immediate action to ensure their swift delivery to the specified destination. Due to the critical nature of this request, it is imperative that these materials be dispatched and arrive by [specific date/time]. Please prioritize this shipment to meet the deadline and maintain our project schedule.Your prompt attention and flexibility in handling this urgent request are greatly appreciated. Thank you for your cooperation and assistance in this matter.</p>
+      <p>
+        We ensure you receive our materials as soon as we finish making them. We require immediate action to ensure their swift delivery to the specified destination. Due to the critical nature of this request, it is imperative that these materials be dispatched and arrive by [specific date/time]. Please prioritize this shipment to meet the deadline and maintain our project schedule. Your prompt attention and flexibility in handling this urgent request are greatly appreciated. Thank you for your cooperation and assistance in this matter.
+      </p>
     </div>
     <div class="col-md-4 feature">
       <i class="fas fa-shipping-fast fa-3x"></i>
@@ -188,40 +243,31 @@
     <span class="sr-only">Next</span>
   </a>
 </div>
-<br><br>
-<div class="container">
-  <div class="row">
-    <div class="col-md-6">
-      <h3>Make a booking</h3>
-      <form method="post" action="index.php">
-        <div class="form-group">
-          <p>Please leave your info to stay connected with us and receive exciting offers.</p>
-          <input type="name" class="form-control" name="Name" placeholder="Your Name" required>
-        </div>
-        <div class="form-group">
-          <input type="number" class="form-control" name="Number" placeholder="Your Phone Number" required>
-        </div>
-        <div class="form-group">
-          <input type="email" class="form-control" name="Mail" placeholder="Your Email" required>
-        </div>
-        <div class="form-group">
-          <input type="text" class="form-control" name="Address" placeholder="Your City/Address" required>
-        </div>
-        <button type="submit" class="btn btn-primary" name="Submit">Submit</button>
-      </form>
-    </div>
-    <div class="col-md-6">
-      <h3 align="right">Contact</h3>
-      <p align="right">
-        <span>9193572011</span><br>
-        <span>Delhi, Indore</span><br>
-        <span>samarth17garg@gmail.com</span>
-      </p>
+
+<!-- Contact section -->
+<section id="contact" class="bg-light py-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6">
+        <h2>Contact Us</h2>
+        <p>
+          Phone: +91 96462 28000<br>
+          Email: futurecrafts9@gmail.com
+        </p>
+      </div>
+      <div class="col-lg-6 contact-address">
+        <span>Future Crafts and Designs</span><br>
+        <span>Panaji, Goa</span>
+      </div>
     </div>
   </div>
-</div>
+</section>
 
-<!-- Bootstrap and jQuery -->
+<footer>
+  All rights reserved 2023. &copy; Shamrth Garg.
+</footer>
+
+<!-- Bootstrap JS and dependencies -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
