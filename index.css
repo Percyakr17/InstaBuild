@@ -64,8 +64,8 @@
   .about-section article {
     background-color: #ffffff;
     border-radius: 8px;
-    padding: 20px;
-    max-width: 6000px;
+    padding: 10px;
+    max-width: 4000px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s;
   }
@@ -75,9 +75,9 @@
   }
   
   .about-section h3 {
-    font-size: 1.5em;
+    font-size: 1.2em;
     color: #232222;
-    margin-bottom: 10px;
+    margin-bottom: 50px;
   }
   
   .about-section p {
