@@ -89,7 +89,7 @@
 .link-to-book {
     color: #ffffff;
     display: block;
-    border: 3px solid #a4f6ff;
+    border: 1px solid #a4f6ff;
     border-radius: 8px;
     padding: 10px 5px;
     transition: all 0.3s ease;
@@ -97,7 +97,7 @@
 
 .link-to-book:hover {
     background-color: #ffffff;
-    color: #95999e;
+    color: #3c2f2f;
     text-decoration: none;
     transform: scale(1.05)
 }
