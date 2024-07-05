@@ -50,7 +50,7 @@
 }
 
 .link-to-book-wrapper {
-    flex: 1;
+    flex: 3;
 }
 
 
@@ -85,21 +85,23 @@
     color: #666666;
     line-height: 1.5;
   }
-  
-
 
 .link-to-book {
     color: #ffffff;
     display: block;
-    border: 2px solid #ffffff;
-    padding: 5px 10px;
+    border: 3px solid #a4f6ff;
+    border-radius: 8px;
+    padding: 10px 5px;
+    transition: all 0.3s ease;
 }
 
-a.link-to-book:hover {
+.link-to-book:hover {
     background-color: #ffffff;
     color: #95999e;
     text-decoration: none;
+    transform: scale(1.05)
 }
+
 
 .about-section p{
     width: 60%;
@@ -118,7 +120,7 @@ a.link-to-book:hover {
 }
 
 .carousel-inner {
-    height: 1000px;
+    height: 900px;
 }
 
 .row-flex {
