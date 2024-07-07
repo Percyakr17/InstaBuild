@@ -2,19 +2,21 @@
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background-image: url('mc3.png');
+  background-image: url('Mainpic.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-color: #cdf6e8;
+  background-color: #a4e6d0;
   margin: 0;
   padding: 0;
 }
 
-
+nav {
+  background-color: #232222;
+}
 
 nav a {
-  color: white;
+  color: rgb(255, 0, 0);
   margin: 0 15px;
   text-decoration: none;
   font-size: 1rem;
@@ -23,7 +25,7 @@ nav a {
 .nav-flex-row {
   display: flex;
   justify-content: center;
-  padding: 10px 0;
+  padding: 0;
 }
 
 .nav-flex-row li {
@@ -53,15 +55,9 @@ nav a {
   text-align: center;
   color: #ffffff;
   font-size: 4em;
+  padding: 160px;
   font-weight: 700;
   text-shadow: 1px 2px #0e0e0e;
-}
-
-.section-intro header {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
 }
 
 .link-to-book-wrapper {
@@ -69,11 +65,12 @@ nav a {
 }
 
 .link-to-book {
-  color: #ffffff;
+  color: #c4eee7;
   display: block;
-  border: 1px solid #a4f6ff;
+  border: 3px solid #a4f6ff;
   border-radius: 8px;
-  padding: 10px 5px;
+  margin: 50px;
+  padding: 10px 10px;
   transition: all 0.3s ease;
 }
 
@@ -81,7 +78,7 @@ nav a {
   background-color: #ffffff;
   color: #3c2f2f;
   text-decoration: none;
-  transform: scale(1.05)
+  transform: scale(1.05);
 }
 
 .about-section {
@@ -105,31 +102,20 @@ nav a {
 }
 
 .about-section h3 {
-  font-size: 1.2em;
+  font-size: 1.8em;
   color: #232222;
+  text-align: center;
+  text-transform: uppercase;
   margin-bottom: 50px;
 }
 
 .about-section p {
-  font-size: 1em;
+  font-size: 1.8em;
   color: #666666;
   line-height: 1.5;
-}
-
-.about-section p {
   width: 60%;
   margin: auto;
   font-family: 'Times New Roman', Times, serif;
-  font-size: 1.8em;
-}
-
-.about-section h3 {
-  text-align: center;
-  width: 60%;
-  margin: auto;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 1.8em;
-  text-transform: uppercase;
 }
 
 .carousel-inner {
@@ -182,11 +168,11 @@ nav a {
 /* Media Queries for Responsive Design */
 
 @media (max-width: 768px) {
-  .contact-address {
+  .contact-adress {
     text-align: center;
   }
 
-  .contact-address span {
+  .contact-adress span {
     display: inline;
     margin: 0 5px;
   }
@@ -205,12 +191,17 @@ nav a {
   }
 
   .row-flex {
-    display: flex;
     flex-direction: column;
   }
 
   .link-to-book {
     font-size: 1.2em;
+  }
+  .link-to-book:hover {
+    background-color: #ffffff;
+    color: #3c2f2f;
+    text-decoration: none;
+    transform: scale(1.05);
   }
 }
 
@@ -218,7 +209,9 @@ nav a {
   .section-intro {
     height: 300px;
   }
-
+.link-to-book {
+    font-size: 1.2em;
+  }
   .about-section {
     padding: 30px;
   }
@@ -237,7 +230,6 @@ nav a {
   }
 
   .row-flex {
-    display: flex;
     flex-direction: column;
   }
 
@@ -260,4 +252,45 @@ nav a {
     font-size: 1em;
     padding: 8px 4px;
   }
+}
+
+footer {
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: auto;
+}
+
+.image-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.image {
+  width: 45%;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.preview {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.preview-image {
+  max-width: 50%;
+  max-height: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
