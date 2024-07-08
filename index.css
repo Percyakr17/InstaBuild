@@ -165,7 +165,6 @@ nav a {
   display: block;
 }
 
-/* Media Queries for Responsive Design */
 
 @media (max-width: 768px) {
   .contact-adress {
