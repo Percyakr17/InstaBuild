@@ -6,6 +6,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $file = fopen("query.txt", "a");
     fwrite($file, "Name: $name\n");
     fwrite($file, "Email: $email\n");
+    fwrite($file, "Email: $Contact\n");
     fwrite($file, "Message: $message\n");
     fwrite($file, "-------------------------\n");
     fclose($file);

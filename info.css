@@ -63,11 +63,12 @@ body {
   
   label {
     display: block;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
   }
   
   input[type="text"],
   input[type="email"],
+  input[type="number"],
   textarea {
     width: 100%;
     padding: 10px;
