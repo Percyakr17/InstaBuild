@@ -10,7 +10,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     fwrite($file, "Message: $message\n");
     fwrite($file, "-------------------------\n");
     fclose($file);
-
     echo "Thank you for your message!";
 } else {
     echo "Please submit the form.";
