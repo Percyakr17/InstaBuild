@@ -156,7 +156,9 @@
 
 
     <h2>Contact Us</h2>
-    <form action="submit.php" method="post">
+      
+        <form id="myForm" action="submit.php" method="post">
+
         <label for="name">Name :</label>
         <input type="text" id="name" name="name" required><br>
 
@@ -168,9 +170,50 @@
         
         <label for="message">Message :</label><br>
         <textarea id="message" name="message" rows="4" cols="50" required></textarea><br>
-        
-        <input type="submit" value="Submit">
-    </form>
+        </form>
+    
+        <script>
+            document.getElementById('myForm').addEventListener('submit', function(event) {
+                var name = document.getElementById('name').value;
+                var email = document.getElementById('email').value;
+                var number = document.getElementById('number').value;
+                var message = document.getElementById('message').value;
+    
+                if(name === '' || email === '' || number === '' || message === '') {
+                    alert('Please fill in all fields');
+                    event.preventDefault();
+                }
+            });
+        </script>
+    </body>
+    </html>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   </main>
   <h3 align="center" ><a href="index.html">HOME</a></h3>
